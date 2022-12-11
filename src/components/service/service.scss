@@ -1,0 +1,96 @@
+.service {
+    margin: 120px 0px;
+    .service__text {
+        .service__title{
+            font-family: 'Old Standard TT';
+            font-size: 12px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ACA592;
+        }
+        .service__subtitle {
+            font-family: 'Old Standard TT';
+            font-size: 60px;
+            text-align: center;
+            color: #FFAE2B;
+        }
+    }
+    .service__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .service__item {
+            width: 32%;
+            height: 350px;
+            border: 1px solid #4B4136;
+            border-radius: 0px;
+            padding: 61px 116px 0px 61px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            img {
+                width: 60px;
+            }
+            .service__item-title {
+                font-family: 'Old Standard TT';
+                font-size: 24px;
+                color: #FFAE2B;
+            }
+            .service__item-subtitle {
+                font-family: 'Old Standard TT';
+                font-size: 15px;    
+                color: #ACA592
+            }
+            .service__item-subsubtitle {
+                font-family: 'Old Standard TT';
+                font-size: 11px;
+                color: #ACA592;                
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .service {
+        .service__list {
+            .service__item {
+                padding: 0px;
+                justify-content: center;
+                align-items: center;
+                .service__item-subsubtitle {
+                    text-align: center;            
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .service {
+        .service__text {
+            .service__subtitle {
+            font-size: 30px;
+            margin-bottom: 10px;
+            }
+        }
+        .service__list {
+            flex-wrap: wrap;
+            gap: 10px;
+            .service__item {
+               width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .service {
+        .service__list {
+            flex-wrap: wrap;
+            .service__item {
+               width: 90%;
+            }
+        }
+    }
+}
